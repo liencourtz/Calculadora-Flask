@@ -18,7 +18,5 @@ def soma():
         resultadoFinal = calc.somar(numero1,numero2)
         return render_template("soma.html", titulo="Soma", resultado=resultadoFinal)
 
-
-
 if __name__ == '__main__':
     app.run(debug=True)
