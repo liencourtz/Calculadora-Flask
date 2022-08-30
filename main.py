@@ -55,9 +55,9 @@ def pot():
 @app.route("/raiz", methods=['POST', 'GET'])
 def rai():
     if request.method == 'POST':
-        numero1 = request.form['num1']
-        numero2 = request.form['num2']
-        this.resultadoFinal = calc.raiz(numero1,numero2)
+        numero = request.form['num']
+        
+        this.resultadoFinal = calc.raiz(numero)
     return render_template("raiz.html", titulo="Raiz", resultado=this.resultadoFinal)
 
 @app.route("/tabuada", methods=['POST', 'GET'])

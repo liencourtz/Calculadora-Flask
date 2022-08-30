@@ -17,7 +17,7 @@ class calculadora:
         if num2 == 0:
             return "Impossivel papae dividir por zerin!"
         else:
-            return num1/num2
+            return float(num1)/float(num2)
 
     def potencia(self, base, expoente):
         if expoente == 0:
