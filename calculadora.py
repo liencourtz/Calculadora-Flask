@@ -36,5 +36,5 @@ class calculadora:
     def tabuada(self, num):
         resultado = ""
         for i in range(11):
-            resultado = resultado + "\n{} * {} = {}".format(num, i, float(num*i))
+            resultado = resultado + "\n{} * {} = {}".format(num, i, int(int(num)*int(i)))
         return resultado
