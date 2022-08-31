@@ -63,9 +63,9 @@ def rai():
 @app.route("/tabuada", methods=['POST', 'GET'])
 def tabu():
     if request.method == 'POST':
-        numero1 = request.form['num1']
+        numero = request.form['num']
         
-        this.resultadoFinal = calc.tabuada(numero1)
+        this.resultadoFinal = calc.tabuada(numero)
     return render_template("tabuada.html", titulo="Tabuada", resultado=this.resultadoFinal)
 
 

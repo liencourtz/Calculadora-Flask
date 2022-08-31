@@ -20,20 +20,21 @@ class calculadora:
             return float(num1)/float(num2)
 
     def potencia(self, base, expoente):
-        if expoente == 0:
+        if float(expoente) == 0:
             return 1
-        elif expoente == 1:
+        elif float(expoente) == 1:
             return base
         else:
-            return math.pow(base, expoente)
+            return math.pow(float(base),float (expoente))
 
     def raiz(self, num):
-        if num < 0:
+        if float(num) < 0:
             return "Impossivel Calcular"
         else:
-            return math.sqrt(num)
+            return math.sqrt(float(num))
 
     def tabuada(self, num):
+        resultado = ""
         for i in range(11):
-            resultado = resultado + "\n{} * {} = {}".format(num, i, int(num*i))
+            resultado = resultado + "\n{} * {} = {}".format(num, i, float(num*i))
         return resultado
